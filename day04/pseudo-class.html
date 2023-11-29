@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 伪类选择器 */
+        a:visited{
+            color: green;
+        }
+        a:link{
+            color: rgb(74, 25, 25);
+        }
+
+        a:hover{
+            color: blue;
+        }
+
+        a:active{
+            color: red;
+        }
+        p:first-child{
+            color: #600678;
+        }
+
+        p:nth-child(3n){
+            color: #066666;
+        }
+
+        p>i:first-child{
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <p>我是1个段落</p>
+    <p>我是2个段落</p>
+    <p>我是3个段落</p>
+    <p>我是4个段落</p>
+    <p>我是5个段落</p>
+    <p>我是6个段落</p>
+    <p>我是7个段落</p>
+    <a href="#">百度一下</a>
+    <p><i>我是第一个</i><i>我是第二个</i><span>我是第三个</span></p>
+</body>
+</html>
