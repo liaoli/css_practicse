@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .news {
+        margin: 100px auto;
+        width: 360px;
+        height: 200px;
+
+        /* background-color: pink; */
+        .header {
+            height: 40px;
+            line-height: 40px;
+            background-color: aliceblue;
+
+            /* 标题字号20px 背景色白色 上边框黄色 */
+            .title {
+                display: inline-block;
+                font-size: 20px;
+                background-color: white;
+                border-top: 4px solid yellow;
+                padding: 2px 8px;
+            }
+        }
+
+        .content {
+            li {
+                list-style: none;
+                background-image: url(./images/square.png);
+                background-repeat: no-repeat;
+                background-position-x: start;
+                background-position-y: center;
+                padding-left: 10px;
+                height: 20px;
+                line-height: 20px;
+            }
+
+            /* 去除a标签的默认属性 */
+            a {
+                text-decoration: none;
+                color: black;
+                cursor: pointer;
+                font-size: 12px;
+                background-image: url(./images/img.gif);
+                background-repeat: no-repeat;
+                background-position-x: start;
+                background-position-y: center;
+                padding-left: 20px;
+            }
+        }
+
+
+    }
+</style>
+
+<body>
+    <div class="news">
+        <div class="header">
+            <div class="title">新闻</h3>
+            </div>
+            <ul class="content">
+                <li> <a href="#">点赞“新农人” 温暖的伸手</a></li>
+                <li> <a href="#">在希望的田野上...</a></li>
+                <li> <a href="#">“中国天眼”又有新发现 已在《自然》杂志发表</a></li>
+                <li> <a href="#">急！这个领域，缺人！月薪4万元还不好招！啥情况？</a></li>
+                <li> <a href="#">G9“带货”背后：亏损面持续扩大，竞争环境激烈</a></li>
+                <li> <a href="#">多地力推二手房“带押过户”，有什么好处？</a></li>
+            </ul>
+
+        </div>
+
+</body>
+
+</html>
