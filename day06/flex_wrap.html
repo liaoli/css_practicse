@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex wrap 是否换行</title>
+    <style>
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            height: 800px;
+            /* flex-wrap: nowrap; */
+            justify-content: space-between;
+            border: 1px solid #000;
+            /* 调整行内对齐方式 其实就是行的纵向对齐方式 */
+            /* align-content: flex-start; */
+            align-content: space-evenly;
+            .content{
+                width: 200px;
+                height: 100px;
+                background-color: aquamarine;
+                margin: 5px 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="content">1</div>
+        <div class="content">2</div>
+        <div class="content">3</div>
+        <div class="content">4</div>
+        <div class="content">5</div>
+        <div class="content">6</div>
+        <div class="content">7</div>
+        <div class="content">8</div>
+    </div>
+</body>
+</html>

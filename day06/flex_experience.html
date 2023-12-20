@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 基本用法</title>
+    <style>
+        .box {
+            display: flex;
+            /* 主抽对齐方式 */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+            /* justify-content: space-around; */
+            /* justify-content: start; */
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* align-items：当前弹性容器内所有弹性盒子的侧轴对齐方式（给弹性容器设置） */
+            /* align-items: stretch;   */
+            
+            align-items: center; 
+            /* 修改主轴方向  默认值：row  */ 
+            /* flex-direction: row; */
+            flex-direction: column;
+            border: 1px solid red;
+            height: 400px;
+            .common{
+                width: 200px;
+                height: 100px;
+                flex:1;
+                align-self: flex-start;
+                background-color: blueviolet;
+            }
+            .noHeight{
+                width: 200px;
+                height: 100px;
+                flex: 2;
+                align-self: flex-end;
+                background-color: blueviolet;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="common">1</div>
+        <div class="noHeight">2</div>
+        <div class="common">3</div>
+    </div>
+    
+</body>
+</html>
