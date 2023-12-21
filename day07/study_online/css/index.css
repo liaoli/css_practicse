@@ -1,10 +1,14 @@
+body {
+    background-color: #f3f5f7;
+}
+
 .wrapper {
     margin: 0 auto;
     width: 1200px;
 }
 
-.head {
-    height: 100;
+.header {
+    height: 100px;
     background-color: #fff;
 }
 
@@ -12,6 +16,7 @@
     padding-top: 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo a {
@@ -45,12 +50,15 @@
     border-radius: 20px;
     align-items: center;
     padding: 4px 20px;
+    width: 200px;
+    height: 29px;
 }
 
 .search input {
     border: 0;
     background-color: transparent;
     outline: none;
+    flex: 1;
 }
 
 .user {
@@ -70,7 +78,7 @@
 }
 
 .banner .wrapper {
-    margin: 0 auto;
+    margin: 20px auto;
     height: 420px;
     background-image: url(../uploads/banner.png);
     display: flex;
@@ -128,20 +136,23 @@
 .banner .right .content ul li {
     border-bottom: #e0e0e0 solid 1px;
     margin: 10px 0;
-    h4{
+
+    h4 {
         margin: 10px 0;
     }
+
     p {
         font-size: 12px;
         line-height: 16px;
         margin-bottom: 10px;
+
         span {
             color: #00a4ff;
         }
     }
 }
 
-.banner .right .content a{
+.banner .right .content a {
     height: 32px;
     background-color: #00a4ff;
     text-align: center;
@@ -150,4 +161,34 @@
     color: #fff;
     border-radius: 15px;
     display: block;
+}
+
+.recommend {
+    background-color: #fff;
+    height: 60px;
+    padding: 0 20px;
+    box-shadow: 1px 1px 2px 0px rgba(211, 211, 211, 0.5);
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recommend .title {
+    color: #00a4ff;
+}
+
+.recommend ul {
+    display: flex;
+    margin: 0 15px;
+    flex: 1;
+}
+
+.recommend li a {
+    border-right: #e0e0e0 solid 2px;
+    padding: 0 15px;
+}
+
+.recommend li:last-child a {
+    border-right: transparent solid 2px;
 }
